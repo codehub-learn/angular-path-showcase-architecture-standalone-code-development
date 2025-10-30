@@ -15,9 +15,7 @@ export function remoteConfigFactory() {
     }),
     {
       provide: REMOTE_CONFIG,
-      useFactory: () => {
-        return remoteConfig;
-      },
+      useFactory: remoteConfig,
     },
   ]);
 }
